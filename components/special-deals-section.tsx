@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
+import { Flame } from "lucide-react"
 
 export default function SpecialDealsSection() {
   const router = useRouter()
@@ -50,7 +51,7 @@ export default function SpecialDealsSection() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="font-bold mb-3 text-gray-900 text-2xl">Descontos imperdíveis 10.10</h2>
+          <h2 className="font-bold mb-3 text-gray-900 text-2xl">Esquenta Black Friday começou!</h2>
           <p className="text-gray-600 text-sm">Aproveite a oportunidade de levar combos especiais</p>
         </div>
 
@@ -97,18 +98,32 @@ function DealCard({ deal, router }: { deal: any; router: any }) {
         {/* Oferta 10.10 Badge */}
         <div className="absolute top-4 left-4 z-10">
           <div className="relative">
-            <div className="bg-gradient-to-r from-pink-500 to-rose-400 text-white text-xs font-bold py-2 px-3 rounded-lg shadow-lg animate-pulse">
-              <div className="flex items-center gap-1">
-                <div className="w-4 h-4 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                  <span className="text-yellow-300 text-[10px] font-bold">%</span>
-                </div>
-                <div className="text-center">
-                  <div className="text-[10px] leading-tight">OFERTA 10.10</div>
-                  <div className="text-[9px] leading-tight font-normal">APENAS HOJE!</div>
+            {deal.id === 1 ? (
+              // Black Friday themed badge for first product
+              <div className="bg-gradient-to-br from-black via-pink-600 to-orange-500 text-white py-2.5 px-4 rounded-xl shadow-lg animate-pulse">
+                <div className="flex items-center gap-2">
+                  <Flame className="w-5 h-5 text-white" fill="currentColor" />
+                  <div>
+                    <div className="leading-tight text-white text-xs font-bold">ESQUENTA BLACK</div>
+                    <div className="text-pink-100 text-[10px] leading-tight font-normal">APENAS HOJE!</div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-ping"></div>
+            ) : (
+              // Original badge for other products
+              <div className="bg-gradient-to-br from-black via-pink-600 to-orange-500 text-white py-2.5 px-4 rounded-xl shadow-lg animate-pulse">
+                <div className="flex items-center gap-2">
+                  <Flame className="w-5 h-5 text-white" fill="currentColor" />
+                  <div>
+                    <div className="leading-tight text-white text-xs font-bold">ESQUENTA BLACK</div>
+                    <div className="text-pink-100 text-[10px] leading-tight font-normal">APENAS HOJE!</div>
+                  </div>
+                </div>
+              </div>
+            )}
+            <div
+              className={`absolute -top-1 -right-1 w-3 h-3 rounded-full animate-ping ${deal.id === 1 ? "bg-orange-500" : "bg-yellow-400"}`}
+            ></div>
           </div>
         </div>
 

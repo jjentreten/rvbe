@@ -10,7 +10,7 @@ export default function PromotionalBanners() {
     {
       id: 1,
       image: "/banner-1.jpg",
-      alt: "Outubro de Ofertas - 10.10 Liberado com até 61% OFF",
+      alt: "Black Friday - Leve mais, pague menos - Descontos Progressivos com até 60% OFF",
     },
     {
       id: 2,

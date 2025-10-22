@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
+import { Flame } from "lucide-react"
 
 export default function CollagenSection() {
   const router = useRouter()
@@ -66,18 +67,16 @@ export default function CollagenSection() {
         >
           <div className="absolute top-2 left-2 z-10">
             <div className="relative">
-              <div className="bg-gradient-to-r from-pink-500 to-rose-400 text-white text-xs font-bold py-2 px-3 rounded-lg shadow-lg animate-pulse">
-                <div className="flex items-center gap-1">
-                  <div className="w-4 h-4 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                    <span className="text-yellow-300 text-[10px] font-bold">%</span>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-[10px] leading-tight">OFERTA 10.10</div>
-                    <div className="text-[9px] leading-tight font-normal">LEVE 2, PAGUE 1</div>
+              <div className="bg-gradient-to-r from-black via-pink-600 to-orange-500 text-white text-xs font-bold py-2 px-3 rounded-lg shadow-lg animate-pulse">
+                <div className="flex items-center gap-1.5">
+                  <Flame className="w-4 h-4 text-orange-400 fill-orange-400" />
+                  <div className="text-left">
+                    <div className="text-[11px] leading-tight font-bold">ESQUENTA BLACK</div>
+                    <div className="text-[9px] leading-tight font-normal text-pink-100">LEVE 2, PAGUE 1!  </div>
                   </div>
                 </div>
               </div>
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-ping"></div>
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-orange-400 rounded-full animate-ping"></div>
             </div>
           </div>
           <img

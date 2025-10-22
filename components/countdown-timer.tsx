@@ -29,7 +29,7 @@ export default function CountdownTimer() {
   }, [])
 
   return (
-    <div className="w-full bg-gradient-to-r from-pink-500 to-rose-400 rounded-2xl p-4 md:p-6 mb-6 shadow-lg">
+    <div className="w-full bg-gradient-to-r from-black via-pink-600 to-orange-500 rounded-2xl p-4 md:p-6 mb-6 shadow-lg">
       <div className="text-center text-white">
         <h2 className="text-lg md:text-xl lg:text-2xl mb-3 md:mb-4 font-semibold">Essa oferta acabará em:</h2>
 

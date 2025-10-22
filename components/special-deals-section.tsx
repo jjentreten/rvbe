@@ -102,7 +102,7 @@ function DealCard({ deal, router }: { deal: any; router: any }) {
               // Black Friday themed badge for first product
               <div className="bg-gradient-to-br from-black via-pink-600 to-orange-500 text-white py-2.5 px-4 rounded-xl shadow-lg animate-pulse">
                 <div className="flex items-center gap-2">
-                  <Flame className="w-5 h-5 text-white" fill="currentColor" />
+                  <Flame className="w-5 h-5 text-orange-400" fill="currentColor" />
                   <div>
                     <div className="leading-tight text-white text-xs font-bold">ESQUENTA BLACK</div>
                     <div className="text-pink-100 text-[10px] leading-tight font-normal">APENAS HOJE!</div>
@@ -113,7 +113,7 @@ function DealCard({ deal, router }: { deal: any; router: any }) {
               // Original badge for other products
               <div className="bg-gradient-to-br from-black via-pink-600 to-orange-500 text-white py-2.5 px-4 rounded-xl shadow-lg animate-pulse">
                 <div className="flex items-center gap-2">
-                  <Flame className="w-5 h-5 text-white" fill="currentColor" />
+                  <Flame className="w-5 h-5 text-orange-400" fill="currentColor" />
                   <div>
                     <div className="leading-tight text-white text-xs font-bold">ESQUENTA BLACK</div>
                     <div className="text-pink-100 text-[10px] leading-tight font-normal">APENAS HOJE!</div>
